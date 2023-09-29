@@ -12,14 +12,17 @@ let result = factorial(4)
 
 console.log(result)
 
-const array = []
+const array = [1, 2, 3, 4, 5, 6]
 
-for (let i = 0; i < 20; i++) {
-    array[i] = Math.floor(Math.random()*100)
-}
+console.log(array)
 
-const arrayFilter = array.filter((n) => (n % 2 === 0))
+console.log('---------------------------------------')
 
-// esto devuelve los elementos que son pares del arreglo
+const arrayFilter = array.filter((n) => (n % 2 === 0)).map(function(n) {
+    return factorial(n)
+})
+
+// esto devuelve los elementos que son pares del arreglo y luego se mapean
+// para calcular el factorial de cada uno de ellos
 
 console.log(arrayFilter)

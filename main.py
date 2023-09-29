@@ -11,3 +11,7 @@ def suma(a, b):
 result = suma(num, num1)
 
 print(result)
+
+array = [1, 2, 3, 4, 5, 6, 7]
+
+print(array)
